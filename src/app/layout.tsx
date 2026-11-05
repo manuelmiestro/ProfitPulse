@@ -37,9 +37,11 @@ export default function RootLayout({
         <Providers>{children}</Providers>
         <div
           role="note"
-          className="fixed bottom-3 left-1/2 -translate-x-1/2 z-[9980] pointer-events-none rounded-full bg-[#2D2A26]/90 px-3 py-1 text-[11px] font-medium text-white shadow"
+          className="fixed bottom-3 left-1/2 -translate-x-1/2 z-[9980] rounded-full bg-[#2D2A26]/90 px-3 py-1 text-[11px] font-medium text-white shadow w-max max-w-[95vw] text-center"
         >
-          Preview with fake data · nothing is saved, sent or charged
+          Preview with fake data · nothing is saved, sent or charged ·{" "}
+          <a href="/demo-persona?p=sample" className="underline">Sample months</a> ·{" "}
+          <a href="/demo-persona?p=new" className="underline">New account</a>
         </div>
       </body>
     </html>
