@@ -35,6 +35,12 @@ export default function RootLayout({
     <html lang="en" className={`${jakarta.variable} ${instrumentSerif.variable}`}>
       <body className="font-sans antialiased">
         <Providers>{children}</Providers>
+        <div
+          role="note"
+          className="fixed bottom-3 left-1/2 -translate-x-1/2 z-[9980] pointer-events-none rounded-full bg-[#2D2A26]/90 px-3 py-1 text-[11px] font-medium text-white shadow"
+        >
+          Preview with fake data · nothing is saved, sent or charged
+        </div>
       </body>
     </html>
   );

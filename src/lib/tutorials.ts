@@ -1,3 +1,5 @@
+import { DEMO_PREVIEW, DEMO_TUTORIALS_PATH } from "@/lib/demo-preview";
+
 /**
  * Link to the MyProfitPulse tutorials page in Joyce's Go High Level community.
  *
@@ -11,7 +13,7 @@ export function getTutorialsUrl(
   value: string | undefined = process.env.NEXT_PUBLIC_TUTORIALS_URL
 ): string | null {
   const raw = value?.trim();
-  if (!raw) return null;
+  if (!raw) return DEMO_PREVIEW ? DEMO_TUTORIALS_PATH : null;
   try {
     const url = new URL(raw);
     if (url.protocol !== "https:" && url.protocol !== "http:") return null;
