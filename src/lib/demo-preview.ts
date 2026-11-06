@@ -12,7 +12,6 @@
 // Off under Jest so the existing suite keeps testing the real app's behaviour.
 export const DEMO_PREVIEW = process.env.NODE_ENV !== "test";
 
-export const DEMO_TUTORIALS_PATH = "/demo-tutorials";
 
 /** Cookie holding the preview persona: "sample" (default) or "new". */
 export const DEMO_PERSONA_COOKIE = "pp_demo_persona";
